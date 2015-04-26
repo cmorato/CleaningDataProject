@@ -3,7 +3,7 @@ Getting and Cleaning Data
 
 ##Course Project CodeBook
 =================================================
-This file describes the variables, data, and procedures for run_analysis.R.  
+This file describes the R script (run_analysis.R) with its variables, data, and procedures.
 * A full description of where and how the data was obtained: : 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones      
 Source of the original data for the project:  
