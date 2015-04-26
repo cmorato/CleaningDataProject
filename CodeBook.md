@@ -1,6 +1,7 @@
 Getting and Cleaning Data 
 =================================================
-Course Project CodeBook
+
+##Course Project CodeBook
 =================================================
 This file describes the variables, data, and procedures for run_analysis.R.  
 * A full description of where and how the data was obtained: : 
@@ -13,9 +14,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
  - Merge *testData* and *trainData* to generate a 10299x561 data frame, *X_Total*; following the same approach, merge *testLabel* and *trainLabel* to generate a 10299x1 data frame, *Y_Total*; and finally, merge *testSubject* and *trainSubject* to generate a 10299x1 data frame, *S_Total*.  
  - Read the features.txt file from the "./UCI_HAR_Dataset" folder and store the data in the variable *features*. Extract the valid measurements on the mean and standard deviation. This results of this process is a 66 indices list. We get a subset of *X_Total* with the 66 corresponding columns.    
  - Read the activity_labels.txt file from the "./UCI_HAR_Dataset"" folder and store the data in  *activity*.  
- - Transform the values of *Y_Total* according to the *activity* data frame.  
- - Combine the *S_Total*, *Y_Total* and *X_Total* by column to get a new cleaned 10299x68 data frame, *cleanedData*. Properly name the first two columns, "subject" and "activity".   
- - Save the variable *cleanedData* into the file "merged_data.txt".  
- - Finally, generate a second independent tidy data set with the average of each measurement for each activity and each subject. We have 30 unique subjects and 6 unique activities, which result in a 180 combinations.
+ - Modify the values of *Y_Total* according to the *activity* data frame.  
+ - Combine the *S_Total*, *Y_Total* and *X_Total* by column in order to get a new cleaned 10299x68 data frame, *cleanedData*.   
+ - Save the variable *cleanedData* into the file "merged_data.txt". (First Dataset) 
+ - Finally, generate the second tidy dataset with the average of each measurement for each activity and each subject. 30 unique subjects and 6 unique activities, which result in a 180 combinations are represented in this dataset.
  - Save the variable *result* into the file "data_with_means.txt". 
  
