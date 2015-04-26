@@ -36,7 +36,7 @@ dim(features)  # Dim 561*2
 
 meanStdIndices <- grep("-mean\\(\\)|-std\\(\\)", features[, 2])
 # leng of the subset = 66
-length(meanStdInd)
+length(meanStdIndices)
 X_Total <- X_Total[, meanStdIndices]
 names(X_Total) <- features[meanStdIndices, 2]
 names(X_Total) <- gsub("\\(|\\)", "", names(X_Total))
